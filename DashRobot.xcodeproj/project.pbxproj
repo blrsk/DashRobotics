@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7137321D17D2690F002A0BAC /* dashrobotics.png in Resources */ = {isa = PBXBuildFile; fileRef = 7137321C17D2690F002A0BAC /* dashrobotics.png */; };
+		7137322017D2794A002A0BAC /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7137321F17D2794A002A0BAC /* CoreBluetooth.framework */; };
+		7137322217D27966002A0BAC /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7137322117D27966002A0BAC /* ExternalAccessory.framework */; };
 		715A8D7217C3E2310036F1AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 715A8D7117C3E2310036F1AA /* UIKit.framework */; };
 		715A8D7417C3E2310036F1AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 715A8D7317C3E2310036F1AA /* Foundation.framework */; };
 		715A8D7617C3E2310036F1AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 715A8D7517C3E2310036F1AA /* CoreGraphics.framework */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7137321C17D2690F002A0BAC /* dashrobotics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dashrobotics.png; sourceTree = "<group>"; };
+		7137321F17D2794A002A0BAC /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		7137322117D27966002A0BAC /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		715A8D6D17C3E2310036F1AA /* DashRobot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DashRobot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		715A8D7117C3E2310036F1AA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		715A8D7317C3E2310036F1AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -44,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7137322217D27966002A0BAC /* ExternalAccessory.framework in Frameworks */,
+				7137322017D2794A002A0BAC /* CoreBluetooth.framework in Frameworks */,
 				715A8D7217C3E2310036F1AA /* UIKit.framework in Frameworks */,
 				715A8D7417C3E2310036F1AA /* Foundation.framework in Frameworks */,
 				715A8D7617C3E2310036F1AA /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +81,8 @@
 		715A8D7017C3E2310036F1AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7137322117D27966002A0BAC /* ExternalAccessory.framework */,
+				7137321F17D2794A002A0BAC /* CoreBluetooth.framework */,
 				715A8D7117C3E2310036F1AA /* UIKit.framework */,
 				715A8D7317C3E2310036F1AA /* Foundation.framework */,
 				715A8D7517C3E2310036F1AA /* CoreGraphics.framework */,
@@ -100,6 +110,7 @@
 				715A8D7A17C3E2310036F1AA /* InfoPlist.strings */,
 				715A8D7D17C3E2310036F1AA /* main.m */,
 				715A8D7F17C3E2310036F1AA /* DashRobot-Prefix.pch */,
+				7137321C17D2690F002A0BAC /* dashrobotics.png */,
 				715A8D8317C3E2310036F1AA /* Default.png */,
 				715A8D8517C3E2310036F1AA /* Default@2x.png */,
 				715A8D8717C3E2310036F1AA /* Default-568h@2x.png */,
@@ -164,6 +175,7 @@
 				715A8D8617C3E2310036F1AA /* Default@2x.png in Resources */,
 				715A8D8817C3E2310036F1AA /* Default-568h@2x.png in Resources */,
 				715A8D8B17C3E2310036F1AA /* MainStoryboard.storyboard in Resources */,
+				7137321D17D2690F002A0BAC /* dashrobotics.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +304,7 @@
 				715A8D9317C3E2310036F1AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

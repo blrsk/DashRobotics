@@ -12,15 +12,15 @@
                         <rect key="frame" x="0.0" y="20" width="568" height="300"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Dashronotics.png" translatesAutoresizingMaskIntoConstraints="NO" id="1pJ-ot-5XY">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="dashrobotics.png" translatesAutoresizingMaskIntoConstraints="NO" id="1pJ-ot-5XY">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="sot-QL-cX6"/>
-                                    <constraint firstAttribute="width" constant="240" id="uaP-zF-iN4"/>
+                                    <constraint firstAttribute="height" constant="128" id="bQT-hD-INo"/>
+                                    <constraint firstAttribute="width" constant="240" id="f0E-aV-gSX"/>
                                 </constraints>
                             </imageView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-100" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="glG-yV-GBF">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="202" id="piZ-Zp-PXk"/>
+                                    <constraint firstAttribute="width" constant="240" id="Mnm-xl-80I"/>
                                 </constraints>
                                 <color key="minimumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="maximumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -30,6 +30,9 @@
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-100" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="5Ap-A3-v2Q">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="hgj-lH-EvP"/>
+                                </constraints>
                                 <color key="minimumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="maximumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -37,39 +40,42 @@
                                     <action selector="leftSliderMoved:" destination="2" eventType="valueChanged" id="4W3-Ny-MrI"/>
                                 </connections>
                             </slider>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xGd-2z-Gmj">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xGd-2z-Gmj">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="vYw-VB-8du"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hgw-dm-QKM">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hgw-dm-QKM">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="B3K-lg-f86"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="glG-yV-GBF" firstAttribute="trailing" secondItem="5Ap-A3-v2Q" secondAttribute="trailing" type="default" id="1ie-1y-ELv"/>
-                            <constraint firstItem="hgw-dm-QKM" firstAttribute="centerY" secondItem="5Ap-A3-v2Q" secondAttribute="centerY" type="default" id="79C-XL-uIm"/>
-                            <constraint firstAttribute="bottom" secondItem="hgw-dm-QKM" secondAttribute="bottom" constant="29" id="NJW-kg-AqV"/>
+                            <constraint firstItem="hgw-dm-QKM" firstAttribute="leading" secondItem="1pJ-ot-5XY" secondAttribute="leading" type="default" id="4Zz-n1-ixk"/>
                             <constraint firstItem="1pJ-ot-5XY" firstAttribute="centerY" secondItem="3" secondAttribute="centerY" type="default" id="Oiq-Jc-6UD"/>
-                            <constraint firstItem="xGd-2z-Gmj" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="275" id="Vpa-Yc-fr1"/>
-                            <constraint firstItem="xGd-2z-Gmj" firstAttribute="trailing" secondItem="hgw-dm-QKM" secondAttribute="trailing" type="default" id="XhN-j2-DpE"/>
-                            <constraint firstItem="5Ap-A3-v2Q" firstAttribute="leading" secondItem="glG-yV-GBF" secondAttribute="leading" type="default" id="Zq9-Xv-9X4"/>
-                            <constraint firstItem="glG-yV-GBF" firstAttribute="top" secondItem="3" secondAttribute="top" constant="27" id="eJL-77-E62"/>
-                            <constraint firstItem="glG-yV-GBF" firstAttribute="top" secondItem="xGd-2z-Gmj" secondAttribute="top" type="default" id="jOn-fe-wK2"/>
-                            <constraint firstItem="glG-yV-GBF" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="42" id="mfI-eK-rqD"/>
-                            <constraint firstItem="xGd-2z-Gmj" firstAttribute="leading" secondItem="hgw-dm-QKM" secondAttribute="leading" type="default" id="vtU-9E-KsB"/>
-                            <constraint firstItem="1pJ-ot-5XY" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="xiV-bC-28P"/>
+                            <constraint firstItem="hgw-dm-QKM" firstAttribute="top" secondItem="3" secondAttribute="top" constant="69" id="Q5Q-Qt-Mig"/>
+                            <constraint firstItem="1pJ-ot-5XY" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="Vsi-Zl-mx8"/>
+                            <constraint firstAttribute="trailing" secondItem="glG-yV-GBF" secondAttribute="trailing" constant="39" id="Zef-Ws-ocT"/>
+                            <constraint firstItem="glG-yV-GBF" firstAttribute="top" secondItem="5Ap-A3-v2Q" secondAttribute="top" type="default" id="aOp-yN-9hk"/>
+                            <constraint firstItem="5Ap-A3-v2Q" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="39" id="e65-Wi-k1O"/>
+                            <constraint firstItem="xGd-2z-Gmj" firstAttribute="baseline" secondItem="hgw-dm-QKM" secondAttribute="baseline" type="default" id="f7e-hP-V8y"/>
+                            <constraint firstAttribute="bottom" secondItem="5Ap-A3-v2Q" secondAttribute="bottom" constant="38" id="mBX-T1-4IN"/>
+                            <constraint firstItem="xGd-2z-Gmj" firstAttribute="trailing" secondItem="1pJ-ot-5XY" secondAttribute="trailing" type="default" id="ogi-Lv-9oJ"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="leftMotorValue" destination="hgw-dm-QKM" id="yYl-Ez-dSH"/>
+                        <outlet property="leftSlider" destination="5Ap-A3-v2Q" id="SZz-iI-2ET"/>
                         <outlet property="rightMotorValue" destination="xGd-2z-Gmj" id="sTy-bK-Ibe"/>
+                        <outlet property="rightSlider" destination="glG-yV-GBF" id="NgJ-LK-rn3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -78,14 +84,18 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Dashronotics.png" width="16" height="16"/>
+        <image name="dashrobotics.png" width="1024" height="203"/>
     </resources>
     <classes>
         <class className="DRViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DRViewController.h"/>
             <relationships>
+                <relationship kind="action" name="leftSliderMoved:" candidateClass="UISlider"/>
+                <relationship kind="action" name="rightSliderMoved:" candidateClass="UISlider"/>
                 <relationship kind="outlet" name="leftMotorValue" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="leftSlider" candidateClass="UISlider"/>
                 <relationship kind="outlet" name="rightMotorValue" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="rightSlider" candidateClass="UISlider"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
